@@ -1,0 +1,12 @@
+# This is a test Scra.PHP script
+
+Infobox:
+	Capital : "capital = \[\[(\w+)\]\]"
+	DrivesOn : "drives_on = (\w+)"
+	AreaKm2 : "area_km2 = ([\d|,]+)"
+	#LargestCity : "largest_city = \[\[(\w+)\]\]"
+	CurrencyName : "currency = \[\[(\w+)\]\]" # <!========== WHY ISN'T THIS WORKING????
+	CurrencySymbol : "currency_code = \[\[(\w+)\]\]"
+
+Page:
+	Template : "//textarea[@id='wpTextbox1']" : [ @Infobox ]

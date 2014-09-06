@@ -1,0 +1,9 @@
+# This is a test Scra.PHP script
+
+Seller:
+	Products: "//h3[@class='newaps']/a/span[@class='lrg bold']"
+
+Page:
+	Title: "//span[@id='btAsinTitle']/span" : [ trim, replace("Apple","Banana"), cut(15), append("...") ]
+	Price: "//b[@class='priceLarge']" : [ prepend("Price=") ]
+	Seller: "//form[@id='handleBuy']/div[@class='buying']/a/@href" : [ prepend("http://www.amazon.co.uk"), "@Seller" ]

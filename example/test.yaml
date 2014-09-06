@@ -1,0 +1,8 @@
+# This is a test Scra.PHP script
+
+Page:
+	Title: "//h1[@id='firstHeading']/span"
+	Sections: "//h2/span[1]"
+	Categories: "//div[@id='mw-normal-catlinks']/ul/li/a"
+	Languages: "//ul[@id='p-lang-list']/li[@class!='wbc-editpage']/a"
+	Links: "//a"
